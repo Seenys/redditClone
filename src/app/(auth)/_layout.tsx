@@ -12,7 +12,6 @@ export default function AuthRoutesLayout() {
     <Stack
       screenOptions={{
         headerBackButtonDisplayMode: "minimal",
-        headerShown: false,
       }}
     >
       : false

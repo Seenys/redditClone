@@ -9,5 +9,11 @@ export default function AppLayout() {
     return <Redirect href="/signIn" />;
   }
 
-  return <Stack />;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    />
+  );
 }
