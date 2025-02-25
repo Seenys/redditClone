@@ -1,5 +1,16 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
+import PostListItem from "../../components/PostListItem";
+
+import post from "../../../assets/data/posts.json";
+import { Post } from "../../types";
 
 export default function HomeScreen() {
-  return <Text>Home Screen</Text>;
+  const item: Post = post[0];
+
+  return (
+    <View>
+      <Text>Home Screen</Text>
+      <PostListItem {...item!} />
+    </View>
+  );
 }
